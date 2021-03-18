@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 # HazPi
 
 
 ## About this code
+=======
+#HazPi
+
+
+##About this code
+>>>>>>> f26af27b90f5fc98e4a01a098131de8e9671e9d2
 
 This repository contains the code related to the article "Saucissonnage of Long Sequences into a Multi-encoder with Transformers".
 To cite this work, please use the following reference:
@@ -12,16 +19,28 @@ Saucissonnage of Long Sequences into a Multi-encoder for Neural Text Summarizati
 Extraction et Gestion des Connaissances (EGC), Montpellier, France, 25-29 jan
 ```
 
+<<<<<<< HEAD
 ## Data
+=======
+##Data
+>>>>>>> f26af27b90f5fc98e4a01a098131de8e9671e9d2
 
 
 We used PubMed dataset proposed in [A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents](https://arxiv.org/pdf/1804.05685.pdf).
 
+<<<<<<< HEAD
 ## How to run the baseline (![equation](https://latex.codecogs.com/svg.latex?Transformer_{ORIGINAL}))
 
 
 
 #### Training
+=======
+##How to run the baseline (![equation](https://latex.codecogs.com/svg.latex?Transformer_{ORIGINAL}))
+
+
+
+####Training
+>>>>>>> f26af27b90f5fc98e4a01a098131de8e9671e9d2
 
 ```bash
 python ttrain_transformer.py -data_path /path_data/file.xlsx -checkpoint_path /home/path_save_checkpoints/  -vocab_save_dir /home/path_dir_vocab/ -batch_size 32 -epochs 300 -no_filters
@@ -59,7 +78,11 @@ We explain the other parameters as follows:
     * **-epoch_inter**. The number of chunks used to divide the gold summary when decoding 
     
 
+<<<<<<< HEAD
 #### Beam Search
+=======
+####Beam Search
+>>>>>>> f26af27b90f5fc98e4a01a098131de8e9671e9d2
 
 ```bash
 python beam_search_transformer.py -data_eval /path_data/file.xlsx -checkpoint_path /home/epoch_to_get_summaries/ -vocab_load_dir /home/path_dir_vocab/  -batch_size 32  -path_summaries_encoded /path/summaries/encoded/ -path_summaries_decoded /path/summaries/decoded/ -path_summaries_error /path/summaries/error/
@@ -68,7 +91,11 @@ python beam_search_transformer.py -data_eval /path_data/file.xlsx -checkpoint_pa
 
 ## How to run our Multi-Encoder Transformer (![equation](https://latex.codecogs.com/svg.latex?HazPi))
 
+<<<<<<< HEAD
 #### Training
+=======
+####Training
+>>>>>>> f26af27b90f5fc98e4a01a098131de8e9671e9d2
 
 
 ```bash
@@ -95,7 +122,11 @@ python train_more_encoders.py -data_path /path_data/file.xlsx -checkpoint_path /
     * **-epoch_extra_training** The number of epochs in the ECTT
     * **-epoch_inter** The number of chunks used to divide the gold summary when decoding 
 
+<<<<<<< HEAD
 #### Beam Search
+=======
+####Beam Search
+>>>>>>> f26af27b90f5fc98e4a01a098131de8e9671e9d2
 
 ```bash
 python beam_search_more_encoders.py -data_eval /path_data/file.xlsx -checkpoint_path /home/epoch_to_get_summaries/ -vocab_load_dir /home/path_dir_vocab/ -path_summaries_encoded /path/summaries/encoded/ -path_summaries_decoded /path/summaries/decoded/ -path_summaries_error /path/summaries/error/
