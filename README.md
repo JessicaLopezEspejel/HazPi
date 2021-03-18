@@ -59,7 +59,7 @@ We explain the other parameters as follows:
     * **-epoch_inter**. The number of chunks used to divide the gold summary when decoding 
     
 
-####Beam Search
+#### Beam Search
 
 ```bash
 python beam_search_transformer.py -data_eval /path_data/file.xlsx -checkpoint_path /home/epoch_to_get_summaries/ -vocab_load_dir /home/path_dir_vocab/  -batch_size 32  -path_summaries_encoded /path/summaries/encoded/ -path_summaries_decoded /path/summaries/decoded/ -path_summaries_error /path/summaries/error/
@@ -68,7 +68,7 @@ python beam_search_transformer.py -data_eval /path_data/file.xlsx -checkpoint_pa
 
 ## How to run our Multi-Encoder Transformer (![equation](https://latex.codecogs.com/svg.latex?HazPi))
 
-####Training
+#### Training
 
 
 ```bash
@@ -95,7 +95,7 @@ python train_more_encoders.py -data_path /path_data/file.xlsx -checkpoint_path /
     * **-epoch_extra_training** The number of epochs in the ECTT
     * **-epoch_inter** The number of chunks used to divide the gold summary when decoding 
 
-####Beam Search
+#### Beam Search
 
 ```bash
 python beam_search_more_encoders.py -data_eval /path_data/file.xlsx -checkpoint_path /home/epoch_to_get_summaries/ -vocab_load_dir /home/path_dir_vocab/ -path_summaries_encoded /path/summaries/encoded/ -path_summaries_decoded /path/summaries/decoded/ -path_summaries_error /path/summaries/error/
